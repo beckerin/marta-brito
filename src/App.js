@@ -1,83 +1,106 @@
 export default function App() {
   return (
-    <div className="bg-slate-800">
-      <section
-        className="container mx-auto page-home pt-36 flex justify-center"
-        id="#home"
-      >
-        <div className="self-center">
-          <h1 className="text-8xl">Martha Brito</h1>
-          <p>
-            <span className="font-bold">Correspondente Jurídica </span>
-            de alta performance.
-          </p>
-          <p>
-            Mais de
-            <span className="font-bold"> 10 cidades atendidas </span>
-            para diversos estados
-          </p>
-          <button className="btn btn-primary rounded">
-            Conheça mais sobre min
-          </button>
-        </div>
-        <div className="self-center">
-          <img src="./images/profile.png" alt="Martha brito em pose" />
-        </div>
-      </section>
-      <section>
-        <h2>Sobre min</h2>
-        <span>
-          Sou graduada em Direito, atuo como Assistente Jurìdica para Oliveira &
-          Carneiro Sociedade de Advogados como parceira jurídica nas áreas
-          previdenciária, cível, trabalhista e consumerista; e ainda, como
-          Correspondente em diversas áreas, realizando vários tipos de
-          diligências.
-        </span>
-      </section>
-      <section>
-        <h3>
-          Atuo como Correspondente Jurídica na execução de{" "}
-          <span>diligências judiciais</span> como :
-        </h3>
-        <div>
-          <div>
-            <span>Acompanhamentos de processos;</span>
-            <span>Acompanhamentos de pericias judiciais;</span>
-            <span>Análises;</span>
-            <span>Andamentos;</span>
-            <span>Audiências (Preposto);</span>
-            <span>Alvarás;</span>
+    <div className="bg-slate-800 font-source">
+      <section className="container page-home flex mx-auto relative" id="#home">
+        <div className="z-10 flex items-center  px-32">
+          <div className="text-3xl text-white">
+            <h1 className="text-8xl text-primary font-releway font-semibold spacing">
+              Martha Brito
+            </h1>
+            <div className="max-w-xl">
+              <p className="mt-8">
+                <span className=" font-bold text-primary">
+                  Correspondente Jurídica{" "}
+                </span>
+                de alta performance.
+              </p>
+              <br />
+              <p>
+                Mais de
+                <span className="font-bold text-primary">
+                  {" "}
+                  10 cidades atendidas{" "}
+                </span>
+                para diversos estados
+              </p>
+            </div>
+            <button className="text-white p-4 mt-4 uppercase bg-primary rounded-2xl">
+              Conheça mais sobre min
+            </button>
           </div>
-          <div>
-            <span>Busca e apreensôes;</span>
-            <span>Certidões;</span>
-            <span>Cópias;</span>
-            <span>Distribuição;</span>
-            <span>Emissão de Guias;</span>
-            <span>Requerimentos;</span>
-            <span>Protocolos;</span>
+          <div className="z-10 pt-8">
+            <img src="./images/profile.png" alt="Martha brito em pose" />
           </div>
         </div>
+
+        <div className="absolute z-0 h-screen object-fill overflow-hidden">
+          <img src="./images/bg-correspondencia.png" alt="" />
+        </div>
       </section>
-      <section>
-        <h3>
-          E, ainda com <span>diligências</span> <span>extrajudiciais</span>{" "}
-          como:
-        </h3>
-        <div>
-          <div>
-            <span>Audiências administrativas;</span>
-            <span>Despachos;</span>
-            <span>Diligências in loco;</span>
-            <span>Notificações extrajudiciais;</span>
-            <span>Participações em licitações;</span>
-          </div>
-          <div>
-            <span>Protocolo e retirada de certidões negativas/positivas</span>
-            <span>
-              Serviços diversos em Cartórios, Prefeituras, Detran e demais
-              orgãos públicos e empresas privadas.
+      <section className="container z-100 h-176 flex mx-auto bg-white px-32">
+        <div className="flex items-center text-red">
+          <div className="max-w-2xl">
+            <h2 className="text-7xl mb-8">Sobre mim</h2>
+            <span className="mt-12 font-releway text-3xl text-justify">
+              Sou graduada em Direito, atuo como Assistente Jurìdica para
+              Oliveira & Carneiro Sociedade de Advogados como parceira jurídica
+              nas áreas previdenciária, cível, trabalhista e consumerista; e
+              ainda, como Correspondente em diversas áreas, realizando vários
+              tipos de diligências.
             </span>
+          </div>
+          <div className="flex items-center w-full h-screen object-cover">
+            <img src="./images/profile-branco.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <section className="container mx-auto bg-secondary text-white text-center">
+        <div className="px-32 pt-12">
+          <h3 className="font-bold text-4xl max-w-3xl mx-auto">
+            Atuo como Correspondente Jurídica na execução de{" "}
+            <span className="font-bold text-red bg-white">
+              diligências judiciais
+            </span>{" "}
+            como:
+          </h3>
+          <div className="mt-12 grid grid-cols-2 text-3xl gap-16 pb-16">
+            <div className="col-span-1 bg-secondary border-white border-4 py-16 rounded-tl-6xl rounded-br-6xl">
+              <div>Acompanhamentos de processos;</div>
+              <div>Acompanhamentos de pericias judiciais;</div>
+              <div>Análises;</div>
+              <div>Andamentos;</div>
+              <div>Audiências (Preposto);</div>
+              <div>Alvarás;</div>
+            </div>
+            <div className="col-span-1 bg-secondary border-white border-4 py-16 rounded-bl-6xl rounded-tr-6xl">
+              <div>Busca e apreensôes;</div>
+              <div>Certidões;</div>
+              <div>Cópias;</div>
+              <div>Distribuição;</div>
+              <div>Emissão de Guias;</div>
+              <div>Requerimentos;</div>
+              <div>Protocolos;</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="container mx-auto bg-white text-red text-center">
+        <div className="px-32 pt-12">
+          <div className="mt-12 grid grid-cols-2 text-3xl gap-16 pb-16">
+            <div className="col-span-1 bg-primary border-red border-4 py-16 rounded-bl-6xl rounded-tr-6xl">
+              <div>Audiências administrativas;</div>
+              <div>Despachos;</div>
+              <div>Diligências in loco;</div>
+              <div>Notificações extrajudiciais;</div>
+              <div>Participações em licitações;</div>
+            </div>
+            <div className="col-span-1 bg-primary border-red border-4 py-16 rounded-tl-6xl rounded-br-6xl">
+              <div>Protocolo e retirada de certidões negativas/positivas</div>
+              <div>
+                Serviços diversos em Cartórios, Prefeituras, Detran e demais
+                orgãos públicos e empresas privadas.
+              </div>
+            </div>
           </div>
         </div>
       </section>
