@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { brands } from "@fortawesome/fontawesome-svg-core/import.macro";
+
 export default function App() {
   return (
     <div className="bg-slate-800 font-source">
@@ -104,42 +107,57 @@ export default function App() {
           </div>
         </div>
       </section>
-      <section>
-        <h3>Área de atuação:</h3>
-        <span>
-          Cacoal, Jaru, Ji-Paraná, Ouro Preto do Oeste, Pimenta Bueno e
-          presidente Médici, no estado de Rondônia
-        </span>
+      <section className="container mx-auto bg-red flex text-white text-center pb-32">
+        <div className="max-w-4xl px-32 pt-64 z-10">
+          <h3 className="text-5xl text-primary font-releway mb-8">
+            Área de atuação
+          </h3>
+          <span className="text-center text-3xl">
+            Cacoal, Jaru, Ji-Paraná, Ouro Preto do Oeste, Pimenta Bueno e
+            presidente Médici, no estado de Rondônia
+          </span>
+        </div>
+        <div className="flex items-center -ml-36 mt-32 object-cover z-0">
+          <img src="./images/estado-ro.png" alt="" />
+        </div>
       </section>
-      <section className="flex">
-        <div>
-          <h3>A solução ideal para seu Escritório ou Empresa.</h3>
-          <p>
-            <span>
+      <section className="container mx-auto bg-white flex text-red pb-32">
+        <div className="max-w-5xl px-32 pt-32">
+          <h3 className="text-4xl mb-8">
+            A solução ideal para seu Escritório ou Empresa.
+          </h3>
+          <p className="max-w-lg text-4xl">
+            <span className="font-semibold">
               Otimize seu tempo, reduza custos, agilize a realização de
               diligências, e expanda seu escritório
             </span>{" "}
             com prestação de serviços especializado, de qualidade e excelência.
           </p>
         </div>
-        <div>img</div>
+        <div className="flex items-center -ml-64 object-cover z-0">
+          <img src="./images/profile-logo.png" alt="" />
+        </div>
       </section>
-      <section className="footer text-center flex justify-around">
+      <section className="container mx-auto py-32 bg-red text-white text-center flex justify-around">
         <div>
-          <p>Telefone</p>
-          <p>+55 (69) 9 9202-2788</p>
+          <p className="text-3xl mb-4">Telefone</p>
+          <p className="text-2xl">+55 (69) 9 9202-2788</p>
         </div>
         <div>
-          <p>E-Mail</p>
-          <a href="mailto:contato@marthabritocj.com.br">
+          <p className="text-3xl mb-4">E-Mail</p>
+          <a className="text-2xl" href="mailto:contato@marthabritocj.com.br">
             contato@marthabritocj.com.br
           </a>
         </div>
         <div>
-          <p>Redes sociais</p>
-          <div className="flex">
-            <p>IN</p>
-            <p>FB</p>
+          <p className="text-3xl mb-4">Redes sociais</p>
+          <div className="text-xl flex gap-4 justify-center">
+            <a>
+              <FontAwesomeIcon icon={brands("square-facebook")} class="w-12" />
+            </a>
+            <a>
+              <FontAwesomeIcon icon={brands("square-instagram")} class="w-12" />
+            </a>
           </div>
         </div>
       </section>
