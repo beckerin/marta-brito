@@ -46,7 +46,7 @@
     "tailwindcss": "^3.1.7",
     "loader-utils": ">=3.2.1",
     "minimatch": ">=3.0.5",
-    "decode-uri-component": ">=0.2.1
+    "decode-uri-component": ">=0.2.1"
     "json5": ">=1.0.2"
   }
 }
